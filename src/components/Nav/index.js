@@ -8,12 +8,13 @@ function NavReturn() {
     <div>
 
     <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">Employee Directory</Navbar.Brand>
+  <Navbar.Brand href="#home">Samuel Greilick</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="/dir">Directory</Nav.Link>
+      <Nav.Link href="/contact">Contact</Nav.Link>
+      <Nav.Link href="/portfolio">Portfolio</Nav.Link>
 
     </Nav>
     <Form inline>
