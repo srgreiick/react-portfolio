@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./style.css";
-import API from "../../utils/API";
+import {repos} from "../../utils/API";
 // import Name from "./Name/EmpName"
 // import Email from "./Email/EmpEmail"
 
@@ -8,7 +8,7 @@ import API from "../../utils/API";
 //Table and sort functions taken from https://www.smashingmagazine.com/2020/03/sortable-tables-react/ 
 const useSortableData = (items, config = null) => {
 
-  console.log(items);
+  // console.log(items);
   const [sortConfig, setSortConfig] = React.useState(config);
 
 
@@ -45,7 +45,7 @@ const useSortableData = (items, config = null) => {
 };
 
 const ProductTable = (props) => {
-  console.log(props);
+  // console.log(props);
   const { items, requestSort, sortConfig } = useSortableData(props.products);
   const getClassNamesFor = (name) => {
     if (!sortConfig) {
@@ -73,7 +73,7 @@ const ProductTable = (props) => {
               onClick={() => requestSort('email')}
               className={getClassNamesFor('email')}
             >
-              Email
+              URL
             </button>
           </th>
           <th>
@@ -91,7 +91,7 @@ const ProductTable = (props) => {
         {items.map((item, i) => (
           <tr key={i}>
             <td>{item.name}</td>
-            <td>{item.email}</td>
+            <td>{item.url}</td>
            
           </tr>
         ))}
@@ -104,21 +104,26 @@ export default function App(data) {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    API.test()
+    // console.log(repos);
+    repos
+    
     .then(json =>
-      json.data.results.map(result => ({
-          name: `${result.name.first} ${result.name.last}`,
-          searchName: `${result.name.first}${result.name.last}`,
-          id: result.registered.date,
-          photo: result.picture.thumbnail,
-          email: result.email,
-          phone: result.phone
+      
+        
+      // console.log(json.data)
+      json.data.map(data => ({
+          name: `${data.full_name}`,
+          url: `${data.git_url}`,
+          // id: result.registered.date,
+          // photo: result.picture.thumbnail,
+          // email: result.email,
+          // phone: result.phone
       }))
+      
   )
   .then(newData => setEmployees(newData ))
 
-
-
+  
       // .then(res => {
       //   final = 
       //   setEmployees(res.data.results)
