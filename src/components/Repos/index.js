@@ -44,6 +44,24 @@ const useSortableData = (items, config = null) => {
   return { items: sortedItems, requestSort, sortConfig };
 };
 
+let title;
+let color;
+
+function test(input) {
+  console.log(input);
+  if (input===null) {
+    title = "N/A"
+    return
+  }
+  else{
+    title= "URL Link"
+    return input
+  }
+}
+
+
+
+
 const ProductTable = (props) => {
   // console.log(props);
   const { items, requestSort, sortConfig } = useSortableData(props.products);
@@ -68,31 +86,26 @@ const ProductTable = (props) => {
             </button>
           </th>
           <th>
-            <button
-              type="button"
-              onClick={() => requestSort('email')}
-              className={getClassNamesFor('email')}
-            >
-              URL
-            </button>
+              Description
           </th>
           <th>
-            <button
-              type="button"
-              onClick={() => requestSort('stock')}
-              className={getClassNamesFor('stock')}
-            >
-              In Stock
-            </button>
+              Deployed URL
+          </th>
+          <th>
+              Repository URL
           </th>
         </tr>
       </thead>
       <tbody>
         {items.map((item, i) => (
           <tr key={i}>
+             
             <td>{item.name}</td>
-            <td>{item.url}</td>
-           
+            <td>{item.desc}</td>
+
+            <td ><a href={test(item.depUrl)}>{title}</a></td>
+            <td ><a href={"https"+test(item.url)}>{title}</a></td>
+
           </tr>
         ))}
       </tbody>
@@ -112,9 +125,10 @@ export default function App(data) {
         
       // console.log(json.data)
       json.data.map(data => ({
-          name: `${data.full_name}`,
-          url: `${data.git_url}`,
-          // id: result.registered.date,
+          name: `${data.full_name.substring(data.full_name.indexOf("/") + 1)}`,
+          url: data.git_url.substring(data.git_url.indexOf(":")),
+          desc: data.description,
+          depUrl: data.homepage
           // photo: result.picture.thumbnail,
           // email: result.email,
           // phone: result.phone
