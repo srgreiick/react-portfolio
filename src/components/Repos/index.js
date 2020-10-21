@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./style.css";
 import {repos} from "../../utils/API";
-// import Name from "./Name/EmpName"
-// import Email from "./Email/EmpEmail"
 
 
 //Table and sort functions taken from https://www.smashingmagazine.com/2020/03/sortable-tables-react/ 
@@ -45,7 +43,7 @@ const useSortableData = (items, config = null) => {
 };
 
 let title;
-let color;
+// let color;
 
 function test(input) {
   console.log(input);
@@ -58,7 +56,6 @@ function test(input) {
     return input
   }
 }
-
 
 
 
