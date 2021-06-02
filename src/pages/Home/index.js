@@ -1,5 +1,5 @@
 import React from "react";
-import me from "./me.jpg";
+import me from "./me-cropped.jpg";
 import "./style.css"
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
             Thanks for visiting.
         </p>
         <br></br>
-        <img src={me} alt="sam greilick"/>
+        <img style={{borderRadius:"50% 50% 0% 50%"}} src={me} alt="sam greilick"/>
         <br></br>
         
         <h3>About me</h3>
