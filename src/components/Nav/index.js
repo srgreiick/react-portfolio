@@ -5,10 +5,10 @@ import {Navbar ,Button, FormControl, Nav, Form} from "react-bootstrap"
 
 function NavReturn() {
   return(
-    <div>
+    <div style={{paddingTop:"20px"}}>
 
-    <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">Samuel Greilick</Navbar.Brand>
+    <Navbar fixed="top" bg="light" expand="lg">
+  <Navbar.Brand href="/">Samuel Greilick</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
