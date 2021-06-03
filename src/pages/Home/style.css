@@ -3,8 +3,9 @@ div {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  color: white;
-  font-size: 20px;
+  color: rgb(216, 207, 207);
+  font-size: 30px;
+  text-shadow: 1px 1px  #020000;
 
   /* //font-family: 'Poppins', sans-serif; */
 }

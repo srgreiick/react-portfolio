@@ -4,14 +4,19 @@ import "./style.css"
 
 function Home() {
   return(
-        <div className="style">
+        <div className="style" style={{textAlign:"center"}}>
     
         <h2>Welcome!</h2>
-        <p>My name is Samuel Greilick, I was born in high mountain desert of Colorado. I am an aspiring fullstack web developer, Emergency Medical Technician, wanderer, amature photogapher, and gamer.
+        <p>My name is Samuel Greilick, I was born in high mountain desert of Colorado. I am an aspiring fullstack web developer, Emergency Medical Technician, Firefighter, wanderer, and gamer.
             Thanks for visiting.
         </p>
         <br></br>
-        <img style={{borderRadius:"50% 50% 0% 50%"}} src={me} alt="sam greilick"/>
+        <div>
+        
+        <img style={{  width:"30%", height: "auto", borderRadius:"50% 50% 0% 50%"}} src={me} alt="sam greilick"/>
+        <br></br>
+        <p>- photo by: Rebecca Dahl</p>
+        </div>
         <br></br>
         
         <h3>About me</h3>
