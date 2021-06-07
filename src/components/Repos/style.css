@@ -43,4 +43,14 @@ body {
   tbody tr:hover {
     background-color: #eee;
   }
+
+  td {
+    font-size: 20px;
+    background-color: black;
+  }
+
+  .tdName {
+    font-size: 30px;
+  }
   
+ 

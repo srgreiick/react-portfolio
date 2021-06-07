@@ -42,17 +42,30 @@ const useSortableData = (items, config = null) => {
   return { items: sortedItems, requestSort, sortConfig };
 };
 
-let title;
+let dUrl;
+let url;
 // let color;
 
-function test(input) {
+function dUrlHandler(input) {
   console.log(input);
   if (input===null) {
-    title = "N/A"
+    dUrl = "N/A"
     return
   }
   else{
-    title= "URL Link"
+    dUrl= "Repository"
+    return input
+  }
+}
+
+function urlHandler(input) {
+  console.log(input);
+  if (input===null) {
+    url = "N/A"
+    return
+  }
+  else{
+    url= "Deployed App"
     return input
   }
 }
@@ -70,7 +83,6 @@ const ProductTable = (props) => {
   };
   return (
     <table>
-      <caption>Products</caption>
       <thead>
         <tr>
           <th>
@@ -97,11 +109,11 @@ const ProductTable = (props) => {
         {items.map((item, i) => (
           <tr key={i}>
              
-            <td>{item.name}</td>
+            <td className={"tdName"}>{item.name}</td>
             <td>{item.desc}</td>
 
-            <td ><a href={test(item.depUrl)}>{title}</a></td>
-            <td ><a href={"https"+test(item.url)}>{title}</a></td>
+            <td ><a href={dUrlHandler(item.depUrl)}>{dUrl}</a></td>
+            <td ><a href={"https"+urlHandler(item.url)}>{url}</a></td>
 
           </tr>
         ))}

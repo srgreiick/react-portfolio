@@ -4,7 +4,7 @@ import "./style.css"
 
 function Home() {
   return(
-        <div className="style" style={{textAlign:"center"}}>
+        <div className="style" style={{textAlign: "center"}} >
     
         <h2>Welcome!</h2>
         <p>My name is Samuel Greilick, I was born in high mountain desert of Colorado. I am an aspiring fullstack web developer, Emergency Medical Technician, Firefighter, wanderer, and gamer.
@@ -15,7 +15,7 @@ function Home() {
         
         <img style={{  width:"30%", height: "auto", borderRadius:"50% 50% 0% 50%"}} src={me} alt="sam greilick"/>
         <br></br>
-        <p>- photo by: Rebecca Dahl</p>
+        <p className={"credit"}>- photo by: Rebecca Dahl</p>
         </div>
         <br></br>
         
