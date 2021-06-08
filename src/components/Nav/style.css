@@ -1,5 +1,8 @@
 .Nav {
-   
-    background-color:gray;
+    background-color:rgb(7, 32, 4);
+color: blueviolet !important;
+}
 
+.NavSub{
+    color: white !important;
 }
