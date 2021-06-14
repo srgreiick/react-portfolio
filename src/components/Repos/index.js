@@ -53,7 +53,7 @@ function dUrlHandler(input) {
     return
   }
   else{
-    dUrl= "Repository"
+    dUrl= "Deployed App"
     return input
   }
 }
@@ -65,7 +65,7 @@ function urlHandler(input) {
     return
   }
   else{
-    url= "Deployed App"
+    url= "Repository"
     return input
   }
 }

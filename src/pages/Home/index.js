@@ -7,8 +7,7 @@ function Home() {
         <div className="style" style={{textAlign: "center"}} >
     
         <h2>Welcome!</h2>
-        <p>My name is Samuel Greilick, I was born in high mountain desert of Colorado. I am an aspiring fullstack web developer, Emergency Medical Technician, Firefighter, wanderer, and gamer.
-            Thanks for visiting.
+        <p>My name is Sam, I am an juinor fullstack web developer, Emergency Medical Technician, Firefighter, wanderer, and gamer. Welcome to my site.
         </p>
         <br></br>
         <div>

@@ -1,5 +1,10 @@
 import React from "react"
 import Projects from "../../components/Repos/index"
+import "../../index.css"
+import "./styles.css"
+
+
+
 
 function Portfolio() {
     return(<div>
