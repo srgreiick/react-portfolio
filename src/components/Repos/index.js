@@ -138,21 +138,11 @@ export default function App(data) {
           url: data.git_url.substring(data.git_url.indexOf(":")),
           desc: data.description,
           depUrl: data.homepage
-          // photo: result.picture.thumbnail,
-          // email: result.email,
-          // phone: result.phone
       }))
       
   )
   .then(newData => setEmployees(newData ))
 
-  
-      // .then(res => {
-      //   final = 
-      //   setEmployees(res.data.results)
-      //   console.log(res.data.results);
-        
-      // })
       .catch(err => console.log(err));
   }, []);
 
