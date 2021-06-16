@@ -1,6 +1,7 @@
 import React from "react";
 import me from "./me-cropped.jpg";
 import "./style.css"
+import "../../index.css"
 
 function Home() {
   return(

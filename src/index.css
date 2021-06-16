@@ -9,11 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 
 
 
@@ -21,7 +16,7 @@ div {
   background-size: cover;
   background-attachment: fixed;
   color: rgb(218, 255, 213);
-  font-size: 25px;
+  font-size: 20px;
  
 
   /* //font-family: 'Poppins', sans-serif; */
@@ -42,4 +37,10 @@ body p{
   background-color:transparent;
   color: aliceblue;
   font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  body p{
+    width: 80%;
+  }
 }
