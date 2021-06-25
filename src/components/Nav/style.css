@@ -1,5 +1,5 @@
 .Nav {
-    background-color:rgb(7, 32, 4);
+    background-color:rgb(25, 0, 0);
 color: blueviolet !important;
 }
 
@@ -8,11 +8,6 @@ color: blueviolet !important;
 
 }
 
-.NavBar{
-    color: white !important;
-    background-color: aliceblue;
-}
-
 .navbar-toggler-icon {
-    filter: invert(1);
+    filter: invert(.6);
 }
