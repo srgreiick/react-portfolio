@@ -5,4 +5,14 @@ color: blueviolet !important;
 
 .NavSub{
     color: white !important;
+
+}
+
+.NavBar{
+    color: white !important;
+    background-color: aliceblue;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }

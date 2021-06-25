@@ -16,7 +16,7 @@ div {
   background-size: cover;
   background-attachment: fixed;
   color: rgb(255, 226, 213);
-  font-size: 20px;
+  font-size: 25px;
  
 
   /* //font-family: 'Poppins', sans-serif; */
@@ -41,6 +41,10 @@ body p{
 
 @media screen and (max-width: 992px) {
   body p{
-    width: 80%;
+    width: 90%;
+
+  }
+  div{
+    font-size: 30px;
   }
 }
