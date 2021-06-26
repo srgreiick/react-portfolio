@@ -5,8 +5,9 @@ import "../../index.css"
 
 function Home() {
   return(
-        <div className="style" style={{textAlign: "center"}} >
     
+        <div className="style" style={{textAlign: "center"}} >
+          
         <h2>Welcome!</h2>
         <p>My name is Sam, I am an juinor fullstack web developer, Emergency Medical Technician, Firefighter, wanderer, and gamer. Welcome to my site.
         </p>
