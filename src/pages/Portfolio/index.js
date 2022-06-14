@@ -8,7 +8,8 @@ import "./styles.css"
 function Portfolio() {
     return(<div>
 
-<h2>Projects and apps</h2>
+<h3>Projects and apps</h3>
+<p>This list is auto generated from github's API on my repositories</p>
         <Projects/>
 
     </div>)

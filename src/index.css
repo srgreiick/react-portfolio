@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,17 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
 div {
   background-size: cover;
   background-attachment: fixed;
   color: rgb(255, 226, 213);
   font-size: 25px;
- 
-
-  /* //font-family: 'Poppins', sans-serif; */
 }
 
 body p{
@@ -35,7 +27,6 @@ body p{
 h3{
   background-color: rgb(25, 0, 0);
 }
-
 
 .credit {
   background-color:transparent;
