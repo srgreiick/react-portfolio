@@ -20,10 +20,6 @@ function Home() {
         </div>
         <br></br>
         
-        <h3>About me</h3>
-        <p>I am an aspiring fullstack web developer and once I am finished with my fullstack training I plan to pursue software development as next career endeavor.
-        I have lived in several states and one other country on another continent, I am driven to constantly learn, grow, and hone myself into the best version of myself I can be.</p>
-
         </div>
   );
 }

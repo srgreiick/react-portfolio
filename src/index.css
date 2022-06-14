@@ -32,6 +32,10 @@ body p{
   padding: 10px;
 }
 
+h3{
+  background-color: rgb(25, 0, 0);
+}
+
 
 .credit {
   background-color:transparent;

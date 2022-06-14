@@ -9,7 +9,6 @@ function FootReturn() {
 
     <ModalFooter bg="light" expand="lg">
 
-HELLO
 </ModalFooter>
     </div>
     
